@@ -1,0 +1,12 @@
+:root {
+  --cl-dark: #0D0D0D;
+  --cl-light: #ffffff;
+
+  --menu-bg: #000000;
+
+  --btn-primary: red;
+  --primary-btn-color: white;
+
+  --btn-secondary: white;
+  --secondary-btn-color: var(--menu-bg);
+}

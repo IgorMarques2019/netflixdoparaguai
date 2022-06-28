@@ -1,0 +1,9 @@
+@keyframes navSpanShow {
+  from {
+    transform:translateX(-24px);
+  }
+
+  to {
+    transform:translateX(0);
+  }
+}

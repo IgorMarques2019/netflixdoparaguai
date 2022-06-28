@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins';
+}
+
+html {
+  scroll-behavior:smooth;
+}
+
+.overflow-hidden {
+  overflow:hidden;
+}
+
+
+.dsp-none {
+  display:none;
+}
+
+.dsp-initial {
+  animation: navSpanShow 0.3s forwards;
+  display:initial;
+}
+
+body {
+  background-color: var(--menu-bg);
+}
+
+body::-webkit-scrollbar {
+  background-color: black;
+  width: 2px;
+}
+
+body::-webkit-scrollbar-thumb {
+
+  background-color: var(--btn-primary);
+}
+
+main {
+  padding-left: 80px;
+
+}
+
+@media screen and (max-width:768px) {
+  main {
+    padding:0px;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.btn-primary {
+  padding: 10px 40px;
+  border-radius: 4px;
+}
+
+.btn-primary:hover {
+  opacity: 0.8;
+}

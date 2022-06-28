@@ -1,0 +1,9 @@
+@import url("./colors.css");
+@import url("./tipografia.css");
+@import url("./global.css");
+@import url("./keyframes.css");
+
+@import url("./index/nav.css");
+@import url("./index/banner-news.css");
+@import url("./index/main-content.css");
+

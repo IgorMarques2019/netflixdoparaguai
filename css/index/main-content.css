@@ -1,0 +1,161 @@
+.controls-movies {
+  display: flex;
+  place-items: center;
+  gap: 0;
+}
+
+.movie-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+
+}
+
+.movie-container a {
+
+  aspect-ratio: 9 / 16;
+  max-width: 280px;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+}
+
+
+
+.movie-container::-webkit-scrollbar {
+  height: 0;
+}
+
+.movie-container a img {
+  width: 100%;
+  object-position: center;
+}
+
+main>article {
+  padding: 60px;
+}
+
+main article>section h2 {
+  color: var(--cl-light);
+  margin: 15px 0px;
+}
+
+article section+section {
+  margin-top: 73px;
+}
+
+
+
+.controls-movies {
+  position: relative;
+}
+
+.controls {
+  opacity: 0.05;
+  position: absolute
+}
+
+.left-control {
+  left: -60px;
+}
+
+.right-control {
+  right: -60px;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+
+
+article h1 {
+  color: white;
+  font-size: 4rem;
+  display: flex;
+  place-items: center;
+  gap: 10px;
+
+
+}
+
+article h1::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 10px;
+  background-color: var(--btn-primary);
+}
+
+hr {
+  height: 1px;
+  background-color: #111111;
+  margin-bottom: 72px;
+  border: none;
+}
+
+@media screen and (max-width:768px) {
+  article {
+    padding: 0px;
+  }
+
+  .controls {
+    display: none;
+  }
+
+  main>article {
+    padding: 20px;
+  }
+}
+
+
+@media screen and (max-width:480px) {
+
+  article h1 {
+    font-size: 2.6rem;
+  }
+
+  article h1::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 5px;
+    background-color: var(--btn-primary);
+  }
+
+
+
+
+  .movie-container {
+    gap: 20px;
+    flex-wrap: nowrap;
+  }
+
+  .movie-container a {
+    width: 150px;
+    display: block;
+  }
+
+  .movie-container a img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  article section h2 {
+    font-size: 20px;
+  }
+
+}
+
+@media screen and (max-width:380px) {
+  article section h2 {
+    font-size: 16px;
+  }
+
+}

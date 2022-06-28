@@ -1,0 +1,103 @@
+.mobile-menus {
+  display: none;
+
+
+}
+
+.mobile-menus>.logo {
+  max-width: 100px;
+}
+
+nav {
+  background-color: var(--menu-bg);
+  height: 100vh;
+  width: max-content;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  place-items: center;
+  z-index: 9999;
+  transition:0.5s;
+}
+
+nav.bgdark {
+  background-color:black;
+  transition:.5s;
+}
+
+
+nav ul li img {
+  width: 24px;
+}
+
+nav ul li+li {
+  margin-top: 40px;
+}
+
+
+nav ul li {
+  display: flex;
+  place-items: center;
+  gap: 30px;
+}
+
+nav ul li:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+nav ul li a {
+  color: var(--cl-light);
+  display: none;
+}
+
+nav:hover li {
+  transition: .3s;
+  padding: 0px 40px;
+}
+
+nav:hover a {
+  display: block;
+  animation: navSpanShow 0.3s forwards;
+}
+
+/* tablet */
+@media screen and (max-width:768px) {
+
+  .ativo {
+    display: initial;
+    height: 100vh;
+  }
+
+  nav {
+    background-color: transparent;
+  }
+
+
+  .mobile-menus {
+    width: 100%;
+    display: flex;
+    place-content: space-between;
+  }
+
+  nav {
+    height: max-content;
+    width: 100%;
+    place-content: end;
+    place-items: center start;
+    flex-direction: column;
+  }
+
+  nav ul {
+    width: 100%;
+    padding: 40px 0px;
+    display: none;
+  }
+
+  nav ul li {
+    /* display: flex; */
+    place-content: center;
+    /* gap: 30px; */
+  }
+}
